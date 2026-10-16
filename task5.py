@@ -17,33 +17,23 @@ sys_config = {
 
 # Initialize a list using the system configuration
 base_val = sys_config["base_seed"]
-
-number_sequence = [
-    base_val,
-    base_val + 15,
-    sys_config["checksum"]
-]
+number_sequence = [base_val, base_val + 15, sys_config["checksum"]]
 
 print(f"Initial Sequence: {number_sequence}")
 
 # Append a new value
 number_sequence.append(base_val + 20)
-
 print(f"After Append: {number_sequence}")
 
 # Extend the sequence with new numbers
 new_numbers = [base_val + 5, sys_config["vector_dim"], base_val]
-
 number_sequence.extend(new_numbers)
-
 print(f"After Extend: {number_sequence}")
 
 # Count occurrences of the base value
 base_count = number_sequence.count(base_val)
-
 print(f"Occurrences of {base_val}: {base_count}")
 
 # Sort the sequence in ascending order
 number_sequence.sort()
-
 print(f"Sorted Sequence: {number_sequence}")

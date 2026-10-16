@@ -21,10 +21,8 @@ base_val = sys_config["base_seed"]
 
 # Initialize a list with deliberate duplicate values
 raw_data = [base_val, base_val + 5, base_val, sys_config["vector_dim"], base_val + 5]
-
 print(f"Raw List (with duplicates): {raw_data}")
 
 # Convert the list to a Set to remove duplicates
 unique_data = set(raw_data)
-
 print(f"Unique Set: {unique_data}")
