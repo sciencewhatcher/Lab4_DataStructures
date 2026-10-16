@@ -26,11 +26,9 @@ data_payload = {
 
 # Iterate and display key-value pairs
 print("--- Payload Data ---")
-
 for key, value in data_payload.items():
     print(f"{key.capitalize()}: {value}")
 
 # Add a new key-value pair dynamically
 data_payload["efficiency_rating"] = 98.5
-
 print(f"\nUpdated Payload: {data_payload}")

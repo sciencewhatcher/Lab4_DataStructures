@@ -15,18 +15,15 @@ sys_config = {
 }
 
 # mmutable tuple using system parameters
-fixed_coordinates = (sys_config["vector_dim"], sys_config["base_seed"], 9)
-
+fixed_coordinates = (sys_config["vector_dim"], sys_config["base_seed"], 0)
 print(f"Fixed Coordinates: {fixed_coordinates}")
 
 # Unpack the tuple into individual variables
 x_val, y_val, z_val = fixed_coordinates
-
 print(f"Unpacked Values -> X: {x_val}, Y: {y_val}, Z: {z_val}")
 
 # Attempt to modify the tuple (Expected to fail)
 print("\nAttempting modification...")
-
 try:
     fixed_coordinates[0] = 99
 except TypeError as error_msg:

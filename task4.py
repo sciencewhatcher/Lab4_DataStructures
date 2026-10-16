@@ -4,9 +4,7 @@ STUDENT_ID = "TUPM-26-1130"
 
 # Derive computational parameters
 seed_digit = int(STUDENT_ID[-1])
-
 id_checksum = sum(int(d) for d in STUDENT_ID if d.isdigit())
-
 vector_dim = len(LAST_NAME)
 
 # Encapsulate state into a Dictionary
@@ -21,6 +19,5 @@ sys_config = {
 
 # Display system state
 print("SYSTEM CONFIGURATION")
-
 for key, value in sys_config.items():
     print(f"{key.upper()}: {value}")
